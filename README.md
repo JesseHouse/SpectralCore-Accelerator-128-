@@ -23,10 +23,6 @@ This is the code that achieved the impossible: a full 128³ forced isotropic tur
 4. Open the .ipynb in Jupyter (or run via CLI).
 5. Hit play—watch 128³ turbulence unfold live on your phone.
 
-### Quick Browser Test (Zero Setup)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZRcV6ZDYoyHaDkekqxeeNuPFF6eFgM8k)  
-Tap → Run All → ~1 FPS turbulence in your phone browser, no installs.
-
 Scaling to 320³ next. 
 
 Star this if you want to see the sequel!
