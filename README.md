@@ -1,29 +1,24 @@
 # Turbulence128-on-Phone
-First-ever real-time 128³ 3D pseudospectral turbulence simulation running natively on an Android phone • pure Python + NumPy + PyTorch • zero external libs • ~1.1 FPS on Snapdragon 8 Gen 2 
-# Mobile SpectralCore-128 — Real-time 128³ Pseudospectral Turbulence on a Phone
 
-World’s first 128³ real-time 3D pseudospectral turbulence simulator running natively on an Android phone · zero external libraries beyond NumPy + PyTorch · ~1.1 FPS on a Snapdragon 8 Gen 2.
+**First-ever real-time 128³ 3D pseudospectral turbulence simulation running natively on an Android phone**  
+Pure Python + NumPy + PyTorch · zero external libs · ~1 FPS on Snapdragon 8 Gen 2
 
-## The Historic Run
-This is the code that achieved the impossible: a full 128³ forced isotropic turbulence simulation in pure Python, hitting stable real-time FPS on a mobile device.
+![image](https://github.com/user-attachments/assets/afea9b47-a7a9-4687-961b-d65eb6296cfa)
 
-![image](https://github.com/user-attachments/assets/f9be5157-fe14-4b66-ae16-1f790d4f4c47)
+Live notebook with full code + outputs (just click the green button):  
+[T128-on-Phone.ipynb](T128-on-Phone.ipynb) → **Open in Colab** button at the top
 
+### What you’re looking at
+- Grid: 128×128×128 (2,097,152 voxels)
+- Full 3D incompressible Navier-Stokes via pseudospectral method
+- Dealiasing, FFT convolutions, RK4 integration — all on CPU
+- Interactive isosurface + vorticity visualization
 
-## How It Works
-- Built as a mobile-optimized spectral core accelerator.
-- Uses pseudospectral methods for Navier-Stokes equations.
-- Zero dependencies outside stock PyTorch/NumPy—runs in Termux on Android.
+### Run it on your phone (Termux)
+```bash
+pkg install python numpy pytorch torchvision
+git clone https://github.com/JesseHouse/Turbulence128-on-Phone
+cd Turbulence128-on-Phone
+python turbulence_128_phone.py   # or open the notebook in Jupyter
 
-## Setup & Run
-1. Install Termux on Android.
-2. Install Python, NumPy, PyTorch (via pip or pkg).
-3. Clone this repo: 
-4. Open the .ipynb in Jupyter (or run via CLI).
-5. Hit play—watch 128³ turbulence unfold live on your phone.
-
-Scaling to 320³ next. 
-
-Star this if you want to see the sequel!
-
-Enjoy this madness? Buy me a coffee → [paypal.me/rhouse84](https://paypal.me/rhouse84)
+ Proof it’s real - 400+ steps in the notebook: energy decay, FPS prints, live plots   - No GPU, no CUDA, no tricks — just a phone cooking continuum chaos  Broke the barrier. Phones can now simulate real turbulence in real time.   Next: 256³? 320³? Who’s stopping us.  If this blows your mind, throw a star or a coffee → paypal.me/rhouse84
