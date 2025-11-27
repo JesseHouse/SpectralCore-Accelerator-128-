@@ -7,8 +7,6 @@ World’s first 128³ real-time 3D pseudospectral turbulence simulator running n
 ## The Historic Run
 This is the code that achieved the impossible: a full 128³ forced isotropic turbulence simulation in pure Python, hitting stable real-time FPS on a mobile device.
 
-markdown    → [Run the historic 944k-step notebook yourself](turbulence_128_phone.ipynb)
-
 ![image](https://github.com/user-attachments/assets/f9be5157-fe14-4b66-ae16-1f790d4f4c47)
 
 
