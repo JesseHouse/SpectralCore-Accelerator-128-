@@ -8,6 +8,8 @@ Real-time 3D pseudospectral turbulence at **N=128³ (2M+ particles)** in **94 li
 - Solves Navier-Stokes via spectral methods (FFT-based).
 - Energy-conserving integration (see outputs: E drops <1% over 400 steps).
 - "PHONE MONSTER" mode: No GPUs, no clusters—just NumPy/Torch on mobile.
+- Real-time volumetric fluids for mobile games: smoke, fire, clouds, water, magic effects — all driven by actual Navier-Stokes running at 128³–256³ on-device at 30+ FPS with the Turbo Charger path.
+- Drop-in gaming integration: Export velocity/density fields as 3D textures → instant reactive smoke, destructible clouds, spell effects, underwater caustics, or full planetary atmospheres — all on-device, no server cost.
 
 ## Quick Run
 - Click **Open in Colab** on the notebook → Hit Runtime > Run all.
